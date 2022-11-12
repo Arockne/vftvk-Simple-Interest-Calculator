@@ -19,18 +19,54 @@ h1 {
 }
 
 div:nth-child(2) {
+  width: 310px;
   margin: 0 auto;
-  width: 300px;
+}
+
+div#form {
+  display: grid;
+  grid-template-columns: repeat(2,1fr) 5px;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 10px;
+  align-items: center;
 }
 
 #principal {
-  margin-left: 49px;
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: start;
+}
+
+label[for=principal] {
+  grid-area: 1 / 1 / 2 / 2
 }
 
 #rate {
-  margin-left: 14px;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#rate_val {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+label[for=rate] {
+  grid-area: 2 / 1 / 3 / 2;
 }
 
 #years {
-  margin-left: 19px;
+  grid-area: 3 / 2 / 3 / 2;
+  justify-self: start;
+}
+
+label[for=years] {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+button {
+  grid-area: 4 / 1 / 5 / 2;
+  justify-self: start;
+  align-self: center;
+}
+
+#result {
+  grid-area: 5 / 1 / 6 / 2
 }
