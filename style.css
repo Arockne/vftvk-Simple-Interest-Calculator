@@ -23,4 +23,14 @@ div:nth-child(2) {
   width: 300px;
 }
 
+#principal {
+  margin-left: 49px;
+}
 
+#rate {
+  margin-left: 14px;
+}
+
+#years {
+  margin-left: 19px;
+}
